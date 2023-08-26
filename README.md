@@ -312,11 +312,11 @@ print(response.text)
 ## 高级查询
 参数q可利用AND OR NOT 完成更复杂的查询。
 
-简单示例：`status_code:200 AND enterprise:腾讯 AND NOT domain:".qq.com"`
+简单示例：`status_code:200 AND enterprise:"腾讯" AND NOT domain:".qq.com"`
 
 * 支持对应接口的所有字段
-* 其他查询参数也存在时返回同时满足普通查询和高级查询的资产。
-
+* 支持使用`()`设置优先级,括号内容优先级最高
+* 其他查询参数也存在时返回同时满足普通查询和高级查询的资产
 
 
 ## vip功能
