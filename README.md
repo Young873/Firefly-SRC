@@ -126,21 +126,20 @@ http://firefly.geekyoung.com/api/subdomain/list
 ```
 参数
 
+
 |参数名称|类型|示例|备注|
 | ----- | ----- | ----- | ----- |
-|url|string|\-| |
-|status\_code|int|200| |
-|title|string|\-| |
+|subdomain|string|\-| |
+|main|string|qq.com|精准匹配|
 |ips|string|127.0.0.1|精准匹配|
 |cnames|string|\-|精准匹配|
-|fingers|string|wordpress|注意大小写|
-|server|string|nginx| |
-|domain|string|qq.com|主域名，精准匹配|
 |enterprise|string|\-| |
 |update\_time|int|1678289313|大于update\_time的资产，单位:秒|
 |page|int|1|默认为1|
-|per\_page|int|20|可不填，目前只允许20|
+|per\_page|int|20|可不填，只允许20|
 |q|string| |高级查询|
+
+
 
 响应示例
 
@@ -173,13 +172,20 @@ http://firefly.geekyoung.com/api/web/list
 ```
 参数
 
+
+
 |参数名称|类型|示例|备注|
 | ----- | ----- | ----- | ----- |
-|subdomain|string|\-| |
-|main|string|qq.com|精准匹配|
+|url|string|\-| |
+|status\_code|int|200| |
+|title|string| | |
+|fingers|string| | |
+|server|string| | |
 |icon\_hash|string| | |
 |cert\_cn|string| | |
+|cert\_hash|string| | |
 |cert\_org|string| | |
+|domain|string| |精准匹配|
 |ips|string|127.0.0.1|精准匹配|
 |cnames|string|\-|精准匹配|
 |enterprise|string|\-| |
@@ -190,6 +196,7 @@ http://firefly.geekyoung.com/api/web/list
 |page|int|1|默认为1|
 |per\_page|int|20|可不填，只允许20|
 |q|string| |高级查询|
+
 
 响应示例
 
