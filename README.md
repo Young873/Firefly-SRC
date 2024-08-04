@@ -35,7 +35,7 @@
 
 **平台地址**
 
-```json
+```bash
 https://firefly-src.geekyoung.com/
 ```
 ![image-20240804223652748](images/image-20240804223652748.png)
@@ -150,7 +150,7 @@ ps: 关于VIP试用，50积分兑换一天的vip。（新用户关注公众号�
 
 利用语法查询过滤不关注的资产，比如泛解析，404，cdn域名等。
 
-```json
+```bash
 (enterprise:"百度" OR enterprise:"腾讯" OR enterprise:"阿里巴巴" ) 
 AND status_code:200 
 AND is_ip:false 
