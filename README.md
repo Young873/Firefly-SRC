@@ -245,7 +245,7 @@ Content-Type: application/json
 
 **接口地址**
 
-```json
+```bash
 https://firefly-src.geekyoung.com/api/subdomain/list
 ```
 **接口参数**
